@@ -1,0 +1,72 @@
+@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
+
+/* Firefox 43+ "Visit..." or "Search..." bar in the drop-down */
+
+/* #PopupAutoCompleteRichResult richlistitem:first-of-type[actiontype="searchengine"],
+#PopupAutoCompleteRichResult richlistitem[actiontype="visiturl"] {
+    display: none !important;
+} */
+
+
+/* Increase height to avoid scroll bar */
+/* 
+#PopupAutoCompleteRichResult .autocomplete-richlistbox {
+    height: auto !important;
+    max-height: calc(31px * 10) !important;
+} */
+
+
+/* Hides ... at the end of the address bar */
+/* #pageActionButton {
+    display: none !important;
+} */
+
+/* #main-window[tabsintitlebar="true"]:not([extradragspace="true"]) #TabsToolbar > .toolbar-items {
+    opacity: 0;
+    pointer-events: none;
+}
+
+#TabsToolbar {
+    visibility: collapse !important;
+} */
+
+#TabsToolbar > .toolbar-items {
+    opacity: 0;
+    pointer-events: none;
+}
+
+#nav-bar {
+    margin-right: 140px;
+}
+
+
+/* Some space on top to allow window dragging */
+#titlebar {
+    appearance: none !important;
+    height: 5px;
+}
+
+/* Fix for main menu calling by Alt button */
+#titlebar > #toolbar-menubar {
+    margin-top: 10px;
+}
+
+.titlebar-buttonbox-container {
+    display: block;
+    height: 50px;
+    margin-top: -5px;
+}
+
+.titlebar-buttonbox-container .titlebar-button {
+    display: block;
+    height: 45px;
+}
+
+/* Hide sidebar header */
+#sidebar-box[sidebarcommand="treestyletab_piro_sakura_ne_jp-sidebar-action"] #sidebar-header {
+    display: none;
+}
+
+#sidebar-box[sidebarcommand="_3c078156-979c-498b-8990-85f7987dd929_-sidebar-action"] #sidebar-header {
+    display: none;
+}
