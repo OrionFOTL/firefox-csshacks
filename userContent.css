@@ -1,3 +1,9 @@
 /* Example file */
 
 /* @import url(content/limit_css_data_leak.css); */ /* Could induce site problems */
+
+/* transparent settings, about:config etc */
+:root {
+  --in-content-page-background: #00000000 !important;
+  --in-content-box-background: #00000088 !important;
+}
