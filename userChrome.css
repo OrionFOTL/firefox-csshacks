@@ -27,7 +27,7 @@ window.sidebar-panel{ --lwt-sidebar-background-color: rgb(36,44,59) !important; 
   display: none;
 }
 
-#sidebar-box[sidebarcommand="_3c078156-979c-498b-8990-85f7987dd929_-sidebar-action"] + #sidebar-splitter {
+.sidebar-splitter:not(:hover):not(#sidebar-box:hover + .sidebar-splitter) {
   display: none !important;
 }
 
