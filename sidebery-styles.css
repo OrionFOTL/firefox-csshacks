@@ -1,0 +1,7 @@
+.Tab[data-discarded="true"] .body {
+    opacity: 1;
+}
+.Tab[data-discarded="true"] > .body > .fav,
+.Tab[data-discarded="true"] > .body > .t-box {
+    opacity: 1;
+}
