@@ -6,6 +6,10 @@
     opacity: 1;
 }
 
-#root.root {--frame-bg: transparent;}
+#root.root {
+    --frame-bg: transparent;
+    --ctx-menu-bg: #282828;
+}
+
 #nav_bar {background-color: transparent;}
 :root{background-color: transparent !important;}
