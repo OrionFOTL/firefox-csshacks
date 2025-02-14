@@ -25,31 +25,41 @@
 
 /* Search box transparency */
 #urlbar {
-  --toolbar-field-background-color:  transparent !important;
+  --toolbar-field-background-color: transparent !important;
 }
 
 /* Fixing window control buttons */
 #navigator-toolbox .titlebar-min .toolbarbutton-icon,
 #navigator-toolbox .titlebar-restore .toolbarbutton-icon,
-#navigator-toolbox .titlebar-max .toolbarbutton-icon{
+#navigator-toolbox .titlebar-max .toolbarbutton-icon {
   opacity: 0;
 }
 
 /* Fixing window control buttons, could need a change with different resolutions or windows scaling */
-#navigator-toolbox .titlebar-buttonbox-container{
+#navigator-toolbox .titlebar-buttonbox-container {
   height: 28px;
 }
 
 /* Fixing window control buttons, could need a change with different resolutions or windows scaling */
-:root[sizemode="maximized"] #navigator-toolbox .titlebar-close .toolbarbutton-icon{
-/*   opacity:0; */
-  margin-right:2px !important;
-} 
+:root[sizemode="maximized"] #navigator-toolbox .titlebar-close .toolbarbutton-icon {
+  /*   opacity:0; */
+  margin-right: 2px !important;
+}
 
 /* Remove the white line around the content window */
 @media (-moz-bool-pref: "sidebar.revamp") {
   #tabbrowser-tabbox {
     outline: none !important;
-/*     box-shadow: none !important; */
+    /*     box-shadow: none !important; */
   }
+}
+
+:root {
+  --toolbar-bgcolor: transparent !important;
+  --tabpanel-background-color: #00000000 !important;
+}
+
+#browser:not(.browser-toolbox-background) {
+  background-color: var(--toolbar-bgcolor) !important;
+  color: var(--toolbar-color) !important;
 }

@@ -11,7 +11,6 @@
 /* Apply your custom modifications after imports */
 
 :root{
-  /* --toolbar-bgcolor: rgb(36,44,59) !important; */
   --uc-menu-bkgnd: var(--toolbar-bgcolor);
   --arrowpanel-background: var(--toolbar-bgcolor) !important;
   --autocomplete-popup-background: var(--toolbar-bgcolor) !important;
@@ -30,5 +29,3 @@ window.sidebar-panel{ --lwt-sidebar-background-color: rgb(36,44,59) !important; 
 .sidebar-splitter:not(:hover):not(#sidebar-box:hover + .sidebar-splitter) {
   display: none !important;
 }
-
-:root { --tabpanel-background-color: #00000000 !important; }
