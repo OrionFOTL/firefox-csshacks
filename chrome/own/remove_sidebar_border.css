@@ -1,0 +1,4 @@
+/* Remove the border around the sidebar */
+.sidebar-splitter:not(:hover):not(#sidebar-box:hover + .sidebar-splitter) {
+    display: none !important;
+}
