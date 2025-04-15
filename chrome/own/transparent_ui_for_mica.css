@@ -32,12 +32,12 @@
 #navigator-toolbox .titlebar-min .toolbarbutton-icon,
 #navigator-toolbox .titlebar-restore .toolbarbutton-icon,
 #navigator-toolbox .titlebar-max .toolbarbutton-icon {
-  opacity: 0;
+  opacity: 0.5;
 }
 
 /* Fixing window control buttons, could need a change with different resolutions or windows scaling */
 #navigator-toolbox .titlebar-buttonbox-container {
-  height: 28px;
+  /* height: 28px; */
 }
 
 /* Fixing window control buttons, could need a change with different resolutions or windows scaling */
